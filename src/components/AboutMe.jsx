@@ -1,8 +1,11 @@
 import React from 'react'
+import ParallaxText from './ParallaxText'
 
 function AboutMe() {
   return (
-    <div className='h-[400px]'>AboutMe</div>
+    <div>
+      <ParallaxText />
+    </div>
   )
 }
 
