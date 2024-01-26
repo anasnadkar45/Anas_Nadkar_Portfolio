@@ -11,8 +11,9 @@ function Navbar() {
   };
 
   return (
-    <header className='bg-gradient-to-b from-[#14141F] to-[#2a2a3c64]  w-full'>
-      <nav className='max-w-[1200px] m-auto flex justify-between py-5 items-center'>
+    <header className='bg-gradient-to-b from-[#14141fa9] to-[#14141F] 
+    z-20 w-full  backdrop-blur-sm'>
+      <nav className='max-w-[1080px] max-lg:px-4 max-xl:px-8 m-auto flex justify-between py-5 items-center'>
 
         <div>
           <a href="#home"
