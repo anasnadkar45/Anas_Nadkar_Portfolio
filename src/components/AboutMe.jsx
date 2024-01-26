@@ -5,6 +5,7 @@ function AboutMe() {
   return (
     <div>
       <ParallaxText />
+      <h1>about</h1>
     </div>
   )
 }
