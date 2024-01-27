@@ -23,38 +23,39 @@ function Home() {
     }
 
     if (strongElements) {
-      const annotation = annotate(strongElements, { type: 'circle', color: 'red', padding: 10 });
+      const annotation = annotate(strongElements, { type: 'circle', color: 'red', padding: 20 });
       annotation.show();
     }
 
   }, []);
 
   const getColorForIndex = (index) => {
-    const colors = ['#ffd60a', '#9b5de5', '#ffd6ff', '#56cfe1', '#ef233c']; // Add more colors as needed
+    const colors = [ '#47EBEB']; // Add more colors as needed
     return colors[index % colors.length];
   };
 
   return (
     <div className='bg-gradient-to-r from-[#111112] via-[#100e12] to-[#131021] bg-cover bg-center w-full h-full' style={{ backgroundImage: `url(${Bg})`, }}>
       <div className="max-w-[1080px] m-auto flex justify-between gap-3 items-center 
-    max-lg:flex-wrap-reverse max-lg:px-4 max-xl:px-8 pt-[110px]  pb-12">
-        {/* <img src={Bg} alt="" className='rotate-[-90deg]'/> */}
+      max-lg:flex-wrap-reverse max-lg:px-4 max-xl:px-8 pt-[110px]  pb-12">
+
         {/* left col */}
-        <div className='flex flex-col z-10 top-[120px] mt-10 gap-2' >
-          <h1 className='text-left max-lg:text-center text-[24px]  max-sm:leading-[50px] max-sm:text-[55px]'>
+        <div className='flex flex-col w-[60%] max-sm:pl-0 pl-12 max-lg:w-full max-lg:items-center max-sm:items-center max-sm:w-full z-10 top-[120px] mt-10 gap-2' >
+          <h1 className='text-left max-lg:text-center text-[24px]  max-sm:leading-[20px] max-sm:text-[25px] mb-6'>
             Hi There!, I'am<span className='text-[#47EBEB] font-bold'> Mohammed Anas</span>
           </h1>
 
-          <h1 className='flex gap-5 text-3xl font-bold max-sm:text-2xl max-sm:text-center  max-lg:text-center'>
-            I am a
-            <span className='text-purple-600 description-span'>
-              <Typewriter
+          <h1 className='text-left text-3xl font-bold max-sm:text-2xl max-sm:text-center mb-8'>
+            I am a {''}
+            <span className='text-[#14141F] description-span text-5xl max-sm:text-2xl font-mono'>
+              {/* <Typewriter
                 options={{
                   strings: Bio.roles,
                   autoStart: true,
                   loop: true,
                 }}
-              />
+              /> */}
+              {Bio.roles[0]}
             </span>
           </h1>
           {/* <div className='text-left mt-2 max-sm:mt-10'>
@@ -65,20 +66,21 @@ function Home() {
             </p>
           </div > */}
 
-          <button className=' bg-[#4EFFFF] text-[#14141F] font-bold w-fit px-4 py-3 rounded-3xl'>
+          <button className=' bg-[#4EFFFF] hover:bg-[#0effcf] transition-all duration-300 text-[#14141F] font-bold w-fit px-4 py-3 rounded-3xl'>
             Explore Projects
           </button>
         </div>
 
         {/* right col */}
-        <div className="container-left right-0">
-          <div className='w-[400px] max-lg:w-[350px] max-sm:w-[250px] rotate-45 relative bg-[#000000] rounded-full p-8'>
-          <HeroBgAnimation />
-          {/* <img src={homesvg} alt="" className='w-[450px] max-lg:w-[400px] max-sm:w-[300px] absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' /> */}
-          <img src={programmingAanimate} alt="" className='w-[450px] max-lg:w-[400px] max-sm:w-[280px] rotate-[-45deg] absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' />
+        <div className="container-left w-[40%] flex justify-center max-lg:w-full max-sm:w-full right-0">
+          <div className='w-[400px] max-lg:w-[350px] max-sm:w-[250px] relative bg-[#050509] rounded-md p-8'>
+            <HeroBgAnimation />
+            {/* <img src={homesvg} alt="" className='w-[450px] max-lg:w-[400px] max-sm:w-[300px] absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' /> */}
+            <img src={programmingAanimate} alt="" className='w-[450px] max-lg:w-[400px]   absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' />
+            
+          </div>
         </div>
       </div>
-    </div>
     </div >
 
   );

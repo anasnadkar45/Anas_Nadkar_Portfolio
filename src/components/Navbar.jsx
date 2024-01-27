@@ -20,7 +20,7 @@ function Navbar() {
             Anas Nadkar
           </a>
           <div className="md:hidden">
-            <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+            <button className="text-gray-700 bg-[#4EFFFF] outline-none p-2 rounded-full hover:bg-[#0effcf] transition-all duration-200 focus:border-gray-400 focus:border"
               onClick={() => setState(!state)}
             >
               {
@@ -37,17 +37,17 @@ function Navbar() {
             </button>
           </div>
         </div>
-        <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
+        <div className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
           <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-            <li><a href="#home" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('home')}>Home</a></li>
-            <li><a href="#aboutme" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('aboutme')}>About Me</a></li>
-            <li><a href="#skills" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('skills')}>Skills</a></li>
-            <li><a href="#projects" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('projects')}>Projects</a></li>
+            <li><a href="#home" className="text-gray-300 hover:text-[#4EFFFF]" onClick={() => scrollToSection('home')}>Home</a></li>
+            <li><a href="#aboutme" className="text-gray-300 hover:text-[#4EFFFF]" onClick={() => scrollToSection('aboutme')}>About Me</a></li>
+            <li><a href="#skills" className="text-gray-300 hover:text-[#4EFFFF]" onClick={() => scrollToSection('skills')}>Skills</a></li>
+            <li><a href="#projects" className="text-gray-300 hover:text-[#4EFFFF]" onClick={() => scrollToSection('projects')}>Projects</a></li>
           </ul>
         </div>
 
         <div className='hidden md:inline-block'>
-          <FaGithub className='size-6 hover:text-indigo-600 transition-all duration-500' />
+          <FaGithub className='size-6 hover:text-[#4EFFFF] transition-all duration-500' />
         </div>
       </div>
     </nav>
