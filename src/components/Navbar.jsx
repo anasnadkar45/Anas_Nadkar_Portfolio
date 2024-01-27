@@ -13,8 +13,7 @@ function Navbar() {
   const [state, setState] = useState(false)
 
   return (
-    <nav className="bg-gradient-to-b from-[#14141fa9] to-[#14141F] 
-        z-20 w-full  backdrop-blur-sm md:static">
+    <nav className="bg-gradient-to-b from-[#14141f94] to-[#14141F] z-20 w-full backdrop-blur-sm  fixed top-0">
       <div className="items-center max-w-[1080px] mx-auto md:flex max-lg:px-4 max-xl:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="#home" onClick={() => scrollToSection('home')} className='font-bold'>
@@ -44,7 +43,6 @@ function Navbar() {
             <li><a href="#aboutme" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('aboutme')}>About Me</a></li>
             <li><a href="#skills" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('skills')}>Skills</a></li>
             <li><a href="#projects" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('projects')}>Projects</a></li>
-            <li><a href="#footer" className="text-gray-300 hover:text-indigo-600" onClick={() => scrollToSection('footer')}>Footer</a></li>
           </ul>
         </div>
 

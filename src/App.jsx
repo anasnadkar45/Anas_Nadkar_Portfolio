@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import AboutMe from './components/AboutMe'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
+
 import { Outlet, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './components/Home/Home'
+import AboutMe from './components/AboutMe/AboutMe'
+import Skills from './components/Skills/Skills'
+import Projects from './components/Projects/Projects'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (

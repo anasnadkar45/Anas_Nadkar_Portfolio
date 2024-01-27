@@ -73,14 +73,22 @@ function ParallaxText() {
         <section className="w-full">
             <ParallaxTextEfect baseVelocity={-5} index={0}>
                     <div className="text-xl font-extrabold flex space-x-8 items-center">
-                        <p>Design Develop Discover</p>
+                    <p>Design </p>
+                        <IoStar className='text-red-600' />
+                        <p>Develop </p>
+                        <IoStar className='text-red-600' />
+                        <p>Discover</p>
                         <IoStar className='text-red-600' />
                     </div>
             </ParallaxTextEfect>
 
             <ParallaxTextEfect baseVelocity={5} index={1}>
                     <div className="text-xl font-extrabold flex space-x-8 items-center">
-                        <p>Design Develop Discover</p>
+                        <p>Design </p>
+                        <IoStar className='text-red-600' />
+                        <p>Develop </p>
+                        <IoStar className='text-red-600' />
+                        <p>Discover</p>
                         <IoStar className='text-red-600' />
                     </div>
             </ParallaxTextEfect>

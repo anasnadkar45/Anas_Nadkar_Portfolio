@@ -1,7 +1,7 @@
 import React from 'react';
 function HeroBgAnimation() {
     return (
-        <div >
+        <div className='rotate-45 '>
             <svg
                 className="BgAnimation__svg"
                 viewBox="0 0 602 602"
