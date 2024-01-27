@@ -44,7 +44,7 @@ function ParallaxTextEfect({ children, baseVelocity = 100, index }) {
 
     // Generate dynamic Tailwind CSS classes for different background colors
     const bgColorClasses = [
-        'bg-yellow-500',
+        'bg-[#47EBEB]',
         'bg-purple-500',
         'bg-blue-500',
         'bg-green-500',
@@ -55,14 +55,14 @@ function ParallaxTextEfect({ children, baseVelocity = 100, index }) {
     return (
         <div className={`parallax py-2 ${bgColorClasses[index % bgColorClasses.length]}`}>
             <motion.div className="scroller" style={{ x }}>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
-                <span className="text-[10px] font-extrabold">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
+                <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
             </motion.div>
         </div>
     );
@@ -70,7 +70,7 @@ function ParallaxTextEfect({ children, baseVelocity = 100, index }) {
 
 function ParallaxText() {
     return (
-        <section className="w-full">
+        <section className="w-full pb-[110px]">
             <ParallaxTextEfect baseVelocity={-5} index={0}>
                     <div className="text-xl font-extrabold flex space-x-8 items-center">
                     <p>Design </p>

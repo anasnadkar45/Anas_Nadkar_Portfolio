@@ -37,7 +37,7 @@ function Home() {
   return (
     <div className='bg-gradient-to-r from-[#111112] via-[#100e12] to-[#131021] bg-cover bg-center w-full h-full' style={{ backgroundImage: `url(${Bg})`, }}>
       <div className="max-w-[1080px] m-auto flex justify-between gap-3 items-center 
-      max-lg:flex-wrap-reverse max-lg:px-4 max-xl:px-8 pt-[110px]  pb-12">
+      max-lg:flex-wrap-reverse max-lg:px-4 max-xl:px-8 pt-[160px]  pb-[110px]">
 
         {/* left col */}
         <div className='flex flex-col w-[60%] max-sm:pl-0 pl-12 max-lg:w-full max-lg:items-center max-sm:items-center max-sm:w-full z-10 top-[120px] mt-10 gap-2' >

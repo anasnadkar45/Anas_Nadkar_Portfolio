@@ -13,7 +13,7 @@ function Navbar() {
   const [state, setState] = useState(false)
 
   return (
-    <nav className="bg-gradient-to-b from-[#14141f94] to-[#14141F] z-20 w-full backdrop-blur-sm  fixed top-0">
+    <nav className="bg-gradient-to-b from-[#14141f94] to-[#14141F] z-20 w-full backdrop-blur-md  fixed top-0">
       <div className="items-center max-w-[1080px] mx-auto md:flex max-lg:px-4 max-xl:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="#home" onClick={() => scrollToSection('home')} className='font-bold'>

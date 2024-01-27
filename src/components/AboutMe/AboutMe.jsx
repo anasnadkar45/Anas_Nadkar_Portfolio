@@ -4,7 +4,7 @@ import ParallaxText from '../ParallaxText'
 function AboutMe() {
   return (
     <div >
-      {/* <ParallaxText /> */}
+      <ParallaxText />
       
       <h1>about</h1>
     </div>
