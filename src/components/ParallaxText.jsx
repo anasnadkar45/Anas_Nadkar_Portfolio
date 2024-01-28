@@ -45,7 +45,7 @@ function ParallaxTextEfect({ children, baseVelocity = 100, index }) {
     // Generate dynamic Tailwind CSS classes for different background colors
     const bgColorClasses = [
         'bg-[#47EBEB]',
-        'bg-purple-500',
+        'bg-[#0effcf]',
         'bg-blue-500',
         'bg-green-500',
         'bg-red-500',
@@ -53,7 +53,7 @@ function ParallaxTextEfect({ children, baseVelocity = 100, index }) {
     ];
 
     return (
-        <div className={`parallax py-2 ${bgColorClasses[index % bgColorClasses.length]}`}>
+        <div className={`parallax py-2 ${bgColorClasses[index % bgColorClasses.length]} rotate-[-3deg] overflow-hidden`}>
             <motion.div className="scroller" style={{ x }}>
                 <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
                 <span className="text-[10px] font-extrabold text-[#14141F]">{children} </span>
@@ -72,7 +72,7 @@ function ParallaxText() {
     return (
         <section className="w-full pb-[110px]">
             <ParallaxTextEfect baseVelocity={-5} index={0}>
-                    <div className="text-xl font-extrabold flex space-x-8 items-center">
+                    <div className="text-xl font-extrabold flex space-x-8 items-center ">
                     <p>Design </p>
                         <IoStar className='text-red-600' />
                         <p>Develop </p>
@@ -83,7 +83,7 @@ function ParallaxText() {
             </ParallaxTextEfect>
 
             <ParallaxTextEfect baseVelocity={5} index={1}>
-                    <div className="text-xl font-extrabold flex space-x-8 items-center">
+                    <div className="text-xl font-extrabold flex space-x-8 items-center ">
                         <p>Design </p>
                         <IoStar className='text-red-600' />
                         <p>Develop </p>

@@ -40,14 +40,14 @@ function Home() {
       max-lg:flex-wrap-reverse max-lg:px-4 max-xl:px-8 pt-[160px]  pb-[110px]">
 
         {/* left col */}
-        <div className='flex flex-col w-[60%] max-sm:pl-0 pl-12 max-lg:w-full max-lg:items-center max-sm:items-center max-sm:w-full z-10 top-[120px] mt-10 gap-2' >
+        <div className='flex flex-col  max-sm:pl-0 max-lg:w-full max-lg:items-center max-sm:items-center max-sm:w-full z-10 top-[120px] mt-10 gap-2' >
           <h1 className='text-left max-lg:text-center text-[24px]  max-sm:leading-[20px] max-sm:text-[25px] mb-6'>
             Hi There!, I'am<span className='text-[#47EBEB] font-bold'> Mohammed Anas</span>
           </h1>
 
           <h1 className='text-left text-3xl font-bold max-sm:text-2xl max-sm:text-center mb-8'>
             I am a {''}
-            <span className='text-[#14141F] description-span text-5xl max-sm:text-2xl font-mono'>
+            <span className='text-[#14141F] description-span text-5xl max-sm:text-2xl font-extrabold font-mono'>
               {/* <Typewriter
                 options={{
                   strings: Bio.roles,
@@ -72,8 +72,8 @@ function Home() {
         </div>
 
         {/* right col */}
-        <div className="container-left w-[40%] flex justify-center max-lg:w-full max-sm:w-full right-0">
-          <div className='w-[400px] max-lg:w-[350px] max-sm:w-[250px] relative bg-[#050509] rounded-md p-8'>
+        <div className="container-left  flex justify-center max-lg:w-full max-sm:w-full right-0 ">
+          <div className='w-[400px] max-lg:w-[350px] max-sm:w-[250px] relative border-[3px] border-[#4EFFFF] hover:border-[#4effca] bg-[#161617] rounded-3xl p-8'>
             <HeroBgAnimation />
             {/* <img src={homesvg} alt="" className='w-[450px] max-lg:w-[400px] max-sm:w-[300px] absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' /> */}
             <img src={programmingAanimate} alt="" className='w-[450px] max-lg:w-[400px]   absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]' />
