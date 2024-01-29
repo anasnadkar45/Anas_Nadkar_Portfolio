@@ -9,13 +9,9 @@ function AboutMe() {
     const spanElements = document.querySelectorAll('.about-span');
     const strongElements = document.querySelectorAll('.circle-strong');
   
-    console.log('spanElements:', spanElements);
-    console.log('strongElements:', strongElements);
-  
     if (spanElements) {
       spanElements.forEach((spanElement, index) => {
         const color = getColorForIndex(index);
-        console.log('Applying color:', color, 'to span:', spanElement);
         const annotation = annotate(spanElement, { type: 'highlight', color, iterations: 1, multiline: true });
         annotation.show();
       });

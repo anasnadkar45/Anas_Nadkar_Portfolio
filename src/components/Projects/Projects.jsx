@@ -1,8 +1,10 @@
 import React from 'react'
-
+import '../../style.css'
 function Projects() {
   return (
-    <div className='h-[400px]'>Projects</div>
+    <div>
+      
+    </div>
   )
 }
 
